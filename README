@@ -9,6 +9,6 @@
  5) The app uses prototype.js for the single ajaxed search form.
 
  * Requirements:
-   Perl 5, CPAN, Catalyst framework
+   Perl 5, CPAN, Catalyst framework (http://www.catalystframework.org)
    Essentially, the command show run without complaining:
    $ cpan Catalyst::Helper::Graphics Catalyst LWP::UserAgent XML::XPath XML::XPath::XMLParser
