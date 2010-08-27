@@ -1,0 +1,14 @@
+======= RunCatRun -- A quick Catalyst web application for fun ======
+
+ * Because writing perl code is fun ;-)
+
+ 1) Run script/runcatrun_server.pl to test the application.
+ 2) This application is built using the catalyst perl MVC framework (Catalyst is similar to RoR, but written in Perl)
+ 3) The app has one controller and one model. The Controller allows users to search for videos based on on tags/categories
+ 4) The model:  lib/RunCatRun/Model/YouTube.pm, implements the interaction with the youtube api
+ 5) The app uses prototype.js for the single ajaxed search form.
+
+ * Requirements:
+   Perl 5, CPAN, Catalyst framework
+   Essentially, the command show run without complaining:
+   $ cpan Catalyst::Helper::Graphics Catalyst LWP::UserAgent XML::XPath XML::XPath::XMLParser

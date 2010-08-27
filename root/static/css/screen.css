@@ -1,0 +1,38 @@
+body {
+background-color: #888;
+font-family: Lucida Grande;
+font-size: 62.5%;
+margin: 25px;
+}
+
+form {
+margin: 0;
+margin-bottom: 1px;
+background-color: #eee;
+padding: 25px;
+font-size: 1.2em;
+}
+
+fieldset {
+border: none;
+}
+
+li {
+background: #2a2a2a;
+list-style-type: none;
+float: left;
+width: 320;
+padding: 20px;
+margin: 2em;
+color: gray;
+}
+
+li a {
+color: white;
+}
+
+li h4, li p { text-align: center; }
+
+#spinner {
+float: right; margin: 10px;
+}

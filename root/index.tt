@@ -1,0 +1,27 @@
+<!DOCTYPE html PUBLIC "-//W3C/DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+ <head>
+  <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+  <title>RunCatRun</title>
+
+  [% c.prototype.define_javascript_functions %]
+  <link rel="stylesheet" href="[% Catalyst.uri_for('/static', 'css', 'screen.css') %]" media="screen" title="RunCatRun Style"/>
+ </head>
+ <body>
+  [% c.prototype.form_remote_tag({
+        url      => c.uri_for('/search'),
+        update   => 'videos',
+        before   => "Element.show('spinner')",
+        complete => "Element.hide('spinner')",
+     })
+  %]
+   <fieldset>
+    <label for="tags">Find videos by tags:</label>
+    <input type="text" name="tags" id="tags"/>
+    <input type="submit" value="Find"/> <img src="[% c.uri_for('/static', 'images', 'cat_loading.gif') %]" id="spinner" style="display: none;" alt="Loading"/>
+    <span id="showActivity" style="display: none;">Loading</span>
+    <div id="videos">&nbsp;</div>
+   </fieldset>
+  </form>
+ </body>
+</html>

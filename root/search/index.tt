@@ -1,0 +1,13 @@
+<ul>
+[% FOREACH video = videos %]
+ <li>
+  <h4><a href="[% video.url %]">[% video.title %]</a></h4>
+  <p>
+  <img src="[% video.snap %]" />
+  </p>
+  <p>Posted by: [% video.author %] (Video Duration: [% video.length_seconds %] seconds)</p>
+  <p>Has a rating of: [% video.rating %] with [% video.fave_count %] user marking it as a favorite</p>
+ </li>
+[% END %]
+</ul>
+<br style="clear: both;"/>
